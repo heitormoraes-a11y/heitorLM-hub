@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+h1 {
+    color: white;
+    display: flex;
+    font-size: 60px;
+    
+    
+}
+
+button {
+    border-radius: 20px solid 40px;
+    background-color: rgb(255, 255, 255);
+    border: 50px;
+    display: flex;
+    
+}
+
+input {
+    color: white;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    width: 300px;
+    height: 25px;
+}
+
+ul {
+    color: white;
+    display: flex;
+    font-weight: 700;
+    flex-direction: column-reverse;
+    gap: 5px;
+    
+    
+}
+.btnEnviar {
+    border-radius: 4px;
+    margin: 5px;
+    padding: 8px 18px;
+    cursor: pointer;
+}
+.formulario {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

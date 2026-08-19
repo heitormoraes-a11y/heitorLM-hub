@@ -1,4 +1,4 @@
-let tarefas = []
+let tarefas = [];
 let contadorID =  0;
 
 const inputText = document.querySelector(".inputText");
@@ -20,9 +20,30 @@ function adicionarTarefa(){
 
     if(texto !== "" ) {
         contadorID++;
-        taferas.push({id: contadorID, tarefa: texto, concluido: false});
+        tarefas.push({id: contadorID, tarefa: texto, concluido: false});
         inputText.value = "";
-        console.log(tarefas);
+        renderizar();
     }
+}
+
+function renderizar() {
+    lista.innerHTML = "";
+    tarefas.forEach(function (item) {
+        let li = document.createElement("li");
+        li.textContent = item.tarefa;
+        lista.appendChild(li);
+
+        let btnExcluir = document.createElement("button")
+        btnExcluir.innerText = "✖️"
+        li.appendChild(btnExcluir);
+        btnExcluir.addEventListener("click", function(e){
+            e.stopPropagation();
+
+            tarefas = tarefas.filter(function(t){
+                return t.id !== item.id
+            })
+            renderizar();
+        })
+    })
 }
 
