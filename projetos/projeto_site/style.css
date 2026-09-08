@@ -1,0 +1,19 @@
+body {
+    background-color: #E3F2FD;
+}
+#primeiro_quadro {
+    width: 1430px;
+    height: 33px;
+    background-color: #0D47A1;
+}
+#titulo {
+    color: white;
+}
+#segundo_quadro {
+    width: 1430px;
+    height: 137px;
+    background-color: #FFFFFF;
+}
+.red {
+    color: red;
+}

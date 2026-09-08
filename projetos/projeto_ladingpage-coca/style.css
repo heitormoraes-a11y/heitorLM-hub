@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: #EAEAEA;
+}
+.linha-superior {
+    background-color: #FF1827;
+    padding: 12px 120px;
+    display: flex;
+    justify-content: end;
+}
+.links-superior {
+    display: flex;
+    gap: 20px;
+}
+
+.links-superior a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+.header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 120px;
+}
+.links-header {
+    display: flex;
+    gap: 35px;
+}
+.links-header a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 18px;
+}
+.hero {
+    height: 30vw;
+    width: 100%;
+    background-image: url(assets/background-hero.png);
+    background-size: cover;
+    background-position: center;
+}
+h2 { 
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+p {
+    text-align: center;
+    font-size: 16px;
+    width: 980px;
+    margin: 0 auto;
+}
+.first {
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+.second {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.cards {
+    max-width: 720px;
+    display: flex;
+    margin: 0 auto;
+    gap: 40px;
+    justify-content: center;
+}
+.card {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(202, 202, 202);
+}
+.banner {
+    width: 980px;
+    height: 400px;
+    background-image: url(assets/background-container.png);
+    background-size: cover;
+    margin: 60px auto;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.banner a {
+    background-color: white;
+    width: 260px;
+    text-align: center;
+    padding: 10px 60px;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    border-radius: 30px;
+
+}
+.banner h2 {
+    color: white;
+    font-size: 34px;
+    width: 354px;
+}
+.banner p {
+    color: white;
+    font-size: 16px;
+    width: 304px;
+    text-align: left;
+    margin: initial;
+}
+.footer {
+    background-color: black;
+    padding: 40px 120px;
+    display: flex;
+    justify-content: space-between;
+}
+.socials {
+    display: flex;
+    justify-content: space-between;
+}
+
+.socials a {
+    width: 32px;
+    height: 32px;
+}
+.instagram {
+    background-image: url(assets/faInstagram.png);
+    background-size: contain;
+    background-position: center;
+}
+.linkedin {
+    background-image: url(assets/faLinkedin.png);
+    background-size: contain;
+    background-position: center;
+}
+.facebook {
+    background-image: url(assets/faFacebookSquare.png);
+    background-size: contain;
+    background-position: center;
+}
+.youtube {
+    background-image: url(assets/faYoutube.png);
+    background-size: contain;
+    background-position: center;
+}

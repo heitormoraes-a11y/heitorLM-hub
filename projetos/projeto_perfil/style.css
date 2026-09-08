@@ -1,0 +1,20 @@
+.second{
+    color: blue;
+}
+
+.text {
+    color: rgb(0, 195, 255);
+}
+#pontos {
+    color: rgb(255, 0, 255);
+    font-size: larger;
+}
+#vitorias {
+    color: yellow;
+    font-size: larger;
+    font-weight: 100;
+}
+#partida_final {
+    color: #8E8E8E;
+    font-weight: 100;
+}

@@ -1,0 +1,30 @@
+.quadro_red {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+#pare {
+    text-align: center;
+    line-height: 100px;
+    color: white;
+}
+.quadro_yellow {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+}
+#atencao {
+    text-align: center;
+    line-height: 100px;
+    color: white;
+}
+.quadro_green {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
+#siga {
+    text-align: center;
+    line-height: 100px;
+    color: white;
+}
