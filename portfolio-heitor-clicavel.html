@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Heitor Laranjeira — Portfólio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#121014;
+    --bg-raised:#18151a;
+    --ink:#ece8e2;
+    --ink-soft:#8f898c;
+    --accent:#e2483d;
+    --line:#2b272c;
+    --line-soft:#201d22;
+    --mono: 'JetBrains Mono', monospace;
+    --display: 'Orbitron', sans-serif;
+  }
+
+  *{ box-sizing:border-box; margin:0; padding:0; }
+
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:var(--mono);
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  a{ color:inherit; }
+
+  .wrap{
+    max-width:760px;
+    margin:0 auto;
+    padding:0 28px;
+  }
+
+  header.hero{
+    padding:80px 0 56px;
+    border-bottom:1px solid var(--line-soft);
+  }
+  .hero-tag{
+    font-size:12px;
+    letter-spacing:0.04em;
+    color:var(--accent);
+    margin-bottom:20px;
+    display:flex;
+    align-items:center;
+    gap:8px;
+  }
+  .hero-tag::before{
+    content:'';
+    width:6px; height:6px;
+    background:var(--accent);
+  }
+  h1{
+    font-family:var(--display);
+    font-weight:700;
+    font-size:clamp(34px, 6vw, 52px);
+    line-height:1.15;
+    letter-spacing:0.01em;
+    color:var(--accent);
+  }
+  .hero-sub{
+    font-size:14px;
+    color:var(--ink-soft);
+    margin-top:14px;
+  }
+
+  section{
+    padding:56px 0 64px;
+  }
+
+  .section-head{
+    display:flex;
+    align-items:baseline;
+    justify-content:space-between;
+    margin-bottom:32px;
+  }
+  .section-head h2{
+    font-family:var(--display);
+    font-weight:600;
+    font-size:20px;
+    letter-spacing:0.03em;
+    color:var(--accent);
+  }
+  .section-count{
+    font-size:12px;
+    color:var(--ink-soft);
+  }
+
+  .project{
+    padding:28px 0;
+    border-top:1px solid var(--line-soft);
+    display:grid;
+    grid-template-columns:1fr auto;
+    gap:8px 20px;
+    align-items:start;
+    transition:padding-left .18s ease;
+    text-decoration:none;
+    color:inherit;
+    cursor:pointer;
+}
+
+.project:first-child{ border-top:none; }
+  .project:hover{ padding-left:8px; }
+
+  .project-name{
+    font-family:var(--display);
+    font-weight:500;
+    font-size:19px;
+    letter-spacing:0.01em;
+    grid-column:1;
+    transition:color .15s ease;
+  }
+  .project-tech{
+    font-family:var(--mono);
+    font-weight:400;
+    font-size:12px;
+    letter-spacing:0;
+    color:var(--ink-soft);
+  }
+  .project:hover .project-name{ color:var(--accent); }
+
+  .project-year{
+    font-size:12px;
+    color:var(--ink-soft);
+    grid-column:2;
+    white-space:nowrap;
+  }
+  .project-desc{
+    grid-column:1 / -1;
+    font-size:13.5px;
+    color:var(--ink-soft);
+    max-width:58ch;
+    line-height:1.65;
+  }
+  .project-stack{
+    grid-column:1 / -1;
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap;
+    margin-top:6px;
+  }
+  .stack-tag{
+    font-size:11px;
+    color:var(--ink-soft);
+    border:1px solid var(--line);
+    background:var(--bg-raised);
+    padding:3px 9px;
+  }
+  .project-link{
+    grid-column:1 / -1;
+    margin-top:8px;
+    font-size:12px;
+    text-decoration:none;
+    color:var(--accent);
+    width:fit-content;
+  }
+  .project-link:hover{ text-decoration:underline; }
+
+  footer{
+    padding:30px 0 50px;
+    border-top:1px solid var(--line-soft);
+    font-size:11px;
+    color:var(--ink-soft);
+    display:flex;
+    justify-content:space-between;
+  }
+  footer a{
+    color:var(--ink-soft);
+    text-decoration:none;
+  }
+  footer a:hover{ color:var(--accent); }
+
+  @media (max-width:600px){
+    .wrap{ padding:0 20px; }
+    header.hero{ padding:56px 0 40px; }
+    .project{ grid-template-columns:1fr; }
+    .project-year{ grid-column:1; }
+    footer{ flex-direction:column; gap:6px; }
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *{ transition:none !important; }
+  }
+
+  :focus-visible{
+    outline:2px solid var(--accent);
+    outline-offset:3px;
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-tag">heitor laranjeira / dev</div>
+    <h1>PROJETOS</h1>
+    <p class="hero-sub">meus projetos e trabalhos</p>
+  </div>
+</header>
+
+<section id="projetos">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Todos</h2>
+      <span class="section-count">08</span>
+    </div>
+
+    <a class="project" href="./projetos/projeto_01/index.html">
+      <div class="project-name">Tabuleiro <span class="project-tech">— Projeto 01</span></div>
+      <div class="project-year">2026</div>
+      <div class="project-desc">Projeto desenvolvido em HTML, CSS e JavaScript.</div>
+      <div class="project-stack"><span class="stack-tag">HTML</span><span class="stack-tag">CSS</span><span class="stack-tag">JAVASCRIPT</span></div>
+      <span class="project-link">ver projeto →</span>
+    </a><a class="project" href="./projetos/projeto_02/index.html">
+      <div class="project-name">Projeto 02 <span class="project-tech">— Projeto</span></div>
+      <div class="project-year">2026</div>
+      <div class="project-desc">Segundo projeto da coleção.</div>
+      <div class="project-stack"><span class="stack-tag">HTML</span><span class="stack-tag">CSS</span></div>
+      <span class="project-link">ver projeto →</span>
+    </a><a class="project" href="./projetos/projeto_03/index.html">
+      <div class="project-name">Projeto 03 <span class="project-tech">— Projeto</span></div>
+      <div class="project-year">2026</div>
+      <div class="project-desc">Terceiro projeto da coleção.</div>
+      <div class="project-stack"><span class="stack-tag">HTML</span><span class="stack-tag">CSS</span></div>
+      <span class="project-link">ver projeto →</span>
+    </a><a class="project" href="./projetos/projeto_04/index.html">
+      <div class="project-name">Projeto 04 <span class="project-tech">— Projeto</span></div>
+      <div class="project-year">2026</div>
+      <div class="project-desc">Quarto projeto da coleção.</div>
+      <div class="project-stack"><span class="stack-tag">HTML</span><span class="stack-tag">CSS</span></div>
+      <span class="project-link">ver projeto →</span>
+    </a><a class="project" href="./projetos/projeto_05/index.html">
+      <div class="project-name">Projeto 05 <span class="project-tech">— Projeto</span></div>
+      <div class="project-year">2026</div>
+      <div class="project-desc">Quinto projeto da coleção.</div>
+      <div class="project-stack"><span class="stack-tag">HTML</span><span class="stack-tag">CSS</span></div>
+      <span class="project-link">ver projeto →</span>
+    </a><a class="project" href="./projetos/projeto_06/index.html">
+      <div class="project-name">Projeto 06 <span class="project-tech">— Projeto</span></div>
+      <div class="project-year">2026</div>
+      <div class="project-desc">Sexto projeto da coleção.</div>
+      <div class="project-stack"><span class="stack-tag">HTML</span><span class="stack-tag">CSS</span></div>
+      <span class="project-link">ver projeto →</span>
+    </a><a class="project" href="./senai/projetos/">
+      <div class="project-name">Projetos SENAI <span class="project-tech">— SENAI</span></div>
+      <div class="project-year">2026</div>
+      <div class="project-desc">Área com os projetos desenvolvidos no SENAI.</div>
+      <div class="project-stack"><span class="stack-tag">SENAI</span><span class="stack-tag">WEB</span></div>
+      <span class="project-link">ver projetos →</span>
+    </a><a class="project" href="./coca-cola-Heitor-Moraes/index.html">
+      <div class="project-name">Coca-Cola <span class="project-tech">— Landing Page</span></div>
+      <div class="project-year">2026</div>
+      <div class="project-desc">Projeto de página inspirado na Coca-Cola.</div>
+      <div class="project-stack"><span class="stack-tag">HTML</span><span class="stack-tag">CSS</span></div>
+      <span class="project-link">ver projeto →</span>
+    </a></div>
+</section>
+
+<footer>
+  <div class="wrap" style="display:flex; justify-content:space-between; width:100%;">
+    <span>© 2026 Heitor</span>
+    <span><a href="https://github.com/" target="_blank" rel="noopener">github</a> · <a href="mailto:heitor@email.com">email</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
